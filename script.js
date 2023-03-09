@@ -77,21 +77,20 @@ class FormValidation{
            this.showError(2,this.errorValues.phonenumberErr)
        }
     
-    
-        if(this.formValues.password === ""){
-            this.errorValues.passwordErr = "*Password should not be blank"
-            this.showError(4,this.errorValues.passwordErr)
+       if(this.formValues.password === ""){
+       
+            this.showError(4,"*Password should not be blank")
         } else if(this.formValues.password.length <= 4){
-            this.errorValues.passwordErr = "* Password must be atleast 5 Characters"
-            this.showError(4,this.errorValues.passwordErr)
+            
+            this.showError(4,"*Password must be atleast 5 Characters")
         } else if(this.formValues.password.length > 10){
-            this.errorValues.passwordErr = "* Password should not exceeds 10 Characters"
-            this.showError(4,this.errorValues.passwordErr)
+           
+            this.showError(4,"*Password should not exceeds 10 Characters")
         } else {
             this.errorValues.passwordErr = ""
             this.showSuccess(4)
         }
-    
+     
 
    
    
