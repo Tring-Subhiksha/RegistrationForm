@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin:0;
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(229, 235, 239);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    background-color: rgb(216,214,214);
+
+    width: 900px;
+    border-radius: 10px;
+}
+.header{
+    color: #fff;
+    text-align: center;
+    background-color: #0a080b;
+    padding: 20px 40px;
+    border-bottom: 2px solid #494848;
+    border-radius: 10px;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+.form-group .span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: bold;
+    visibility: hidden;
+}
+.form-group.success input{
+    border-color: #2ecc71;
+}
+
+.form-group.error input{
+    border-color: #e74c3c;
+}
+
+.form-group.error .span{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form #submit{
+    background-color: #2a0845;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #6441a5;
+}
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+.form-group.success i.fa-square-check{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-group.error i.fa-square-xmark{
+    visibility: visible;
+    color: #e74c3c;
+}
